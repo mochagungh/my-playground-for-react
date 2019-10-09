@@ -1,16 +1,43 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
 
-import "./styles.css";
+import './styles.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
+const App = () => {
+	const [counter, setCounter] = useState(0);
 
-const rootElement = document.getElementById("root");
+	const handleIncreaseCounter = () => {
+		setCounter(counter + 1);
+	};
+
+	const handleDecreaseCounter = () => {
+		if (counter === 0) {
+			const edit = () => {
+				document.getElementsByTagName('h1')[0].innerHTML =
+					'maap kamu terlalu baik';
+			};
+			edit();
+			setInterval(function() {
+				window.location.reload();
+			}, 1000);
+		} else {
+			setCounter(counter - 1);
+		}
+	};
+
+	const handleResetCounter = () => {
+		setCounter(0);
+	};
+
+	return (
+		<div className="App">
+			<h1>sisa hidup kamu : {counter} tahun lagi...</h1>
+			<button onClick={handleIncreaseCounter}>Tambah Tahun</button>
+			<button onClick={handleDecreaseCounter}>Kurangi Tahun</button>
+			<button onClick={handleResetCounter}>Reset Tahun</button>
+		</div>
+	);
+};
+
+const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
