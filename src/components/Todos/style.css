@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	background: #209cee;
+	padding: 30px;
+	height: 100vh;
+}
+
+.todo-list {
+	background: #e8e8e8;
+	border-radius: 4px;
+	padding: 10px;
+	max-width: 400px;
+}
+
+.todo {
+	background: #fff;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+	padding: 3px 10px;
+	font-size: 12px;
+	margin-bottom: 7px;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.complete {
+	background: lightblue;
+	color: rgb(11, 21, 43);
+	border-radius: 4px;
+	cursor: pointer;
+}

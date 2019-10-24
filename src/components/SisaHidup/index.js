@@ -1,29 +1,22 @@
 import React, { useState } from 'react';
 
 const SisaHidup = () => {
-	const [counter, setCounter] = useState(0);
+	const initialCounter = 0;
+	const [counter, setCounter] = useState(initialCounter);
 
 	const handleIncreaseCounter = () => {
-		setCounter(counter + 1);
+		setCounter(prevCounter => prevCounter + 1);
 	};
 
 	const handleDecreaseCounter = () => {
-		if (counter === 0) {
-			const edit = () => {
-				document.getElementsByTagName('h1')[0].innerHTML =
-					'maap kamu terlalu baik';
-			};
-			edit();
-			setInterval(function() {
+		const edit = () => {
+			document.getElementsByTagName('h1')[0].innerHTML =
+				'maap kamu terlalu baik';
+			setInterval(() => {
 				window.location.reload();
 			}, 650);
-		} else {
-			setCounter(counter - 1);
-		}
-	};
-
-	const handleResetCounter = () => {
-		setCounter(0);
+		};
+		initialCounter === 0 ? edit() : setCounter(prevCounter => prevCounter - 1);
 	};
 
 	return (
@@ -31,7 +24,7 @@ const SisaHidup = () => {
 			<h1>sisa hidup kamu : {counter} tahun lagi...</h1>
 			<button onClick={handleIncreaseCounter}>Tambah Tahun</button>
 			<button onClick={handleDecreaseCounter}>Kurangi Tahun</button>
-			<button onClick={handleResetCounter}>Reset Tahun</button>
+			<button onClick={() => setCounter(initialCounter)}>Reset Tahun</button>
 		</div>
 	);
 };

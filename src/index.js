@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import SisaHidup from './components/SisaHidup/index';
-import CountDown from './components/CountDown/index';
+import SisaHidup from './components/SisaHidup/index';
+// import CountDown from './components/CountDown/index';
 
 import './styles.css';
-
-const rootElement = document.getElementById('root');
-ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
+// import Game from './components/ParticleOfComponentOfCompponents/TicTacToe';
+import Todos from './components/Todos/HookHooks';
+// import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
 // const rootElement = document.getElementById('root');
-// ReactDOM.render(<SisaHidup />, rootElement);
+// ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
+
+const rootElement = document.getElementById('root');
+ReactDOM.render(<SisaHidup />, rootElement);
