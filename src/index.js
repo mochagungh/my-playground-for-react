@@ -12,10 +12,11 @@ import EffectCounter from './components/Hooks/UseEffect';
 import UEMouseOver from './components/Hooks/UEMouseOver';
 import UEMouseOverContainer from './components/Hooks/UEMouseOverContainer';
 import UEIntervalCounter from './components/Hooks/UEIntervalCounter';
+import DataFetching from './components/Hooks/DataFetching';
 // import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
 // const rootElement = document.getElementById('root');
 // ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<UEIntervalCounter />, rootElement);
+ReactDOM.render(<DataFetching />, rootElement);
