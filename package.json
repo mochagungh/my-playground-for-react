@@ -9,7 +9,8 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "3.0.1",
-    "style.css": "1.0.0"
+    "style.css": "1.0.0",
+    "styled-components": "4.4.0"
   },
   "devDependencies": {
     "typescript": "3.3.3"
