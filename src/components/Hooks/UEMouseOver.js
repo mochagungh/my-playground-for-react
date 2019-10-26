@@ -11,6 +11,10 @@ function UEMouseOver() {
 
 	useEffect(() => {
 		window.addEventListener('mousemove', logMouseMove);
+
+		return () => {
+			window.removeEventListener('mousemove', logMouseMove);
+		};
 	}, []);
 
 	return (
