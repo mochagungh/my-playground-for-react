@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 function UseStateObj() {
 	const [name, setName] = useState({ firstname: '', lastname: '' });
+	
 	return (
 		<>
 			<input
