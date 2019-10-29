@@ -24,4 +24,4 @@ import MultipleUR from './components/Hooks/UseReducer/MultipleURExample';
 // ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<MultipleUR />, rootElement);
+ReactDOM.render(<App />, rootElement);
