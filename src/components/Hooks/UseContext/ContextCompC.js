@@ -13,7 +13,7 @@ function ContextCompC() {
 				{color => {
 					return (
 						<ChannelContext.Consumer>
-							{channel => {
+							{channelColor => {
 								return (
 									<p>
 										user context value color is <strong>{color}</strong> <br />{' '}
