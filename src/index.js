@@ -6,17 +6,19 @@ import CountDown from './components/CountDown/index';
 import './styles.css';
 import Game from './components/ParticleOfComponentOfCompponents/TicTacToe';
 import Todos from './components/Todos/HookHooks';
-import UseStateObj from './components/Hooks/UseStatesObject';
-import UseStateAoB from './components/Hooks/UseStateAoB';
-import EffectCounter from './components/Hooks/UseEffect';
-import UEMouseOver from './components/Hooks/UEMouseOver';
-import UEMouseOverContainer from './components/Hooks/UEMouseOverContainer';
-import UEIntervalCounter from './components/Hooks/UEIntervalCounter';
-import DataFetching from './components/Hooks/DataFetching';
+import UseStateObj from './components/Hooks/UseState/UseStatesObject';
+import UseStateAoB from './components/Hooks/UseState/UseStateAoB';
+import EffectCounter from './components/Hooks/UseEffect/UseEffect';
+import UEMouseOver from './components/Hooks/UseEffect/UEMouseOver';
+import UEMouseOverContainer from './components/Hooks/UseEffect/UEMouseOverContainer';
+import UEIntervalCounter from './components/Hooks/UseEffect/UEIntervalCounter';
+import DataFetching from './components/Hooks/UseEffect/DataFetching';
+import ContextCompA from './components/Hooks/UseContext/ContextCompA';
+import App from './App';
 // import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
 // const rootElement = document.getElementById('root');
 // ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<DataFetching />, rootElement);
+ReactDOM.render(<App />, rootElement);
