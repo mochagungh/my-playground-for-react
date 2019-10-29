@@ -18,10 +18,13 @@ import App from './App';
 import FirstCounter from './components/Hooks/UseReducer/FirstCounter';
 import ComplexCounter from './components/Hooks/UseReducer/ComplexCounter';
 import MultipleUR from './components/Hooks/UseReducer/MultipleURExample';
+import DataFetchingUSUE from './components/Hooks/UseEffect/DataFetchingUSUE';
+import DataFetchingUR from './components/Hooks/UseReducer/DataFetchingUR';
+
 // import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
 // const rootElement = document.getElementById('root');
 // ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<DataFetchingUR />, rootElement);
