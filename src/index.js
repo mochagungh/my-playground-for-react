@@ -16,10 +16,11 @@ import DataFetching from './components/Hooks/UseEffect/DataFetching';
 import ContextCompA from './components/Hooks/UseContext/ContextCompA';
 import App from './App';
 import FirstCounter from './components/Hooks/UseReducer/FirstCounter';
+import ComplexCounter from './components/Hooks/UseReducer/ComplexCounter';
 // import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
 // const rootElement = document.getElementById('root');
 // ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<FirstCounter />, rootElement);
+ReactDOM.render(<ComplexCounter />, rootElement);
