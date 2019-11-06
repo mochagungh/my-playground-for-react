@@ -22,6 +22,7 @@ import DataFetchingUSUE from './components/Hooks/UseEffect/DataFetchingUSUE';
 import DataFetchingUR from './components/Hooks/UseReducer/DataFetchingUR';
 import ParentComp from './components/Hooks/UseCallback/ParentComp';
 import MultiSelectCheckBox from './components/ParticleOfComponentOfCompponents/MultiSelectCheckBox';
+import ShowPassword from './components/ParticleOfComponentOfCompponents/ShowPassword';
 
 // import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
@@ -29,7 +30,7 @@ import MultiSelectCheckBox from './components/ParticleOfComponentOfCompponents/M
 // ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<ParentComp />, rootElement);
+ReactDOM.render(<ShowPassword />, rootElement);
 
 // const options = [{ label: 'Item One' }, { label: 'Item Two' }];
 
