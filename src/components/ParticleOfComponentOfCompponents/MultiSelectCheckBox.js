@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const style = {
 	listContainer: {
@@ -12,7 +12,7 @@ const style = {
 };
 
 function MultiSelectCheckBox({ options, onChange }) {
-	const [data, setData] = React.useState(options);
+	const [data, setData] = useState(options);
 
 	const toggle = item => {
 		data.map((_, key) => {
