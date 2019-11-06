@@ -20,6 +20,8 @@ import ComplexCounter from './components/Hooks/UseReducer/ComplexCounter';
 import MultipleUR from './components/Hooks/UseReducer/MultipleURExample';
 import DataFetchingUSUE from './components/Hooks/UseEffect/DataFetchingUSUE';
 import DataFetchingUR from './components/Hooks/UseReducer/DataFetchingUR';
+import ParentComp from './components/Hooks/UseCallback/ParentComp';
+import MultiSelectCheckBox from './components/ParticleOfComponentOfCompponents/MultiSelectCheckBox';
 
 // import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
@@ -27,4 +29,16 @@ import DataFetchingUR from './components/Hooks/UseReducer/DataFetchingUR';
 // ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<DataFetchingUR />, rootElement);
+ReactDOM.render(<ParentComp />, rootElement);
+
+// const options = [{ label: 'Item One' }, { label: 'Item Two' }];
+
+// ReactDOM.render(
+// 	<MultiSelectCheckBox
+// 		options={options}
+// 		onChange={data => {
+// 			console.log(data);
+// 		}}
+// 	/>,
+// 	document.getElementById('root')
+// );
