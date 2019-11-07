@@ -23,6 +23,7 @@ import DataFetchingUR from './components/Hooks/UseReducer/DataFetchingUR';
 import ParentComp from './components/Hooks/UseCallback/ParentComp';
 import MultiSelectCheckBox from './components/ParticleOfComponentOfCompponents/MultiSelectCheckBox';
 import ShowPassword from './components/ParticleOfComponentOfCompponents/ShowPassword';
+import Collapse from './components/ParticleOfComponentOfCompponents/Collapse';
 
 // import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
@@ -43,3 +44,11 @@ ReactDOM.render(<ShowPassword />, rootElement);
 // 	/>,
 // 	document.getElementById('root')
 // );
+
+ReactDOM.render(
+	<Collapse>
+		<h1>This is a collapse</h1>
+		<p>Hello world!</p>
+	</Collapse>,
+	document.getElementById('root')
+);
