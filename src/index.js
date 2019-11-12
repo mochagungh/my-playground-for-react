@@ -24,14 +24,18 @@ import ParentComp from './components/Hooks/UseCallback/ParentComp';
 import MultiSelectCheckBox from './components/ParticleOfComponentOfCompponents/MultiSelectCheckBox';
 import ShowPassword from './components/ParticleOfComponentOfCompponents/ShowPassword';
 import Collapse from './components/ParticleOfComponentOfCompponents/Collapse';
+import Slider from './components/ParticleOfComponentOfCompponents/Slider';
 
 // import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
 // const rootElement = document.getElementById('root');
 // ReactDOM.render(<CountDown hours="0" minutes="1" />, rootElement);
 
+// const rootElement = document.getElementById('root');
+// ReactDOM.render(<ShowPassword />, rootElement);
+
 const rootElement = document.getElementById('root');
-ReactDOM.render(<ShowPassword />, rootElement);
+ReactDOM.render(<Slider callback={val => console.log(val)} />, rootElement);
 
 // const options = [{ label: 'Item One' }, { label: 'Item Two' }];
 
@@ -45,10 +49,10 @@ ReactDOM.render(<ShowPassword />, rootElement);
 // 	document.getElementById('root')
 // );
 
-ReactDOM.render(
-	<Collapse>
-		<h1>This is a collapse</h1>
-		<p>Hello world!</p>
-	</Collapse>,
-	document.getElementById('root')
-);
+// ReactDOM.render(
+// 	<Collapse>
+// 		<h1>This is a collapse</h1>
+// 		<p>Hello world!</p>
+// 	</Collapse>,
+// 	document.getElementById('root')
+// );
