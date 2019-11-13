@@ -25,6 +25,7 @@ import MultiSelectCheckBox from './components/ParticleOfComponentOfCompponents/M
 import ShowPassword from './components/ParticleOfComponentOfCompponents/ShowPassword';
 import Collapse from './components/ParticleOfComponentOfCompponents/Collapse';
 import Slider from './components/ParticleOfComponentOfCompponents/Slider';
+import StarRating from './components/ParticleOfComponentOfCompponents/StarRating';
 
 // import MessageList from './components/ParticleOfComponentOfCompponents/Context';
 
@@ -35,7 +36,7 @@ import Slider from './components/ParticleOfComponentOfCompponents/Slider';
 // ReactDOM.render(<ShowPassword />, rootElement);
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<Slider callback={val => console.log(val)} />, rootElement);
+ReactDOM.render(<StarRating rating={4} />, rootElement);
 
 // const options = [{ label: 'Item One' }, { label: 'Item Two' }];
 
