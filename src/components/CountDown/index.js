@@ -4,22 +4,27 @@ const CountDown = ({ hours = 0, minutes = 0, seconds = 0 }) => {
 	const [paused, setPaused] = useState(false);
 	const [over, setOver] = useState(false);
 	const [time, setTime] = useState({
-		hours: parseInt(hours),
-		minutes: parseInt(minutes),
-		seconds: parseInt(seconds)
+		hours: parseInt(hours, 10),
+		minutes: parseInt(minutes, 10),
+		seconds: parseInt(seconds, 10)
+
+		//alternative, this things can be done with
+		// hours: Number(hours),
+		// minutes: Number(minutes),
+		// seconds: Number(seconds)
 	});
 
 	const perTIK = () => {
 		if (paused || over) return;
-		if (time.hours == 0 && time.minutes == 0 && time.seconds == 0)
+		if (time.hours === 0 && time.minutes === 0 && time.seconds === 0)
 			setOver(true);
-		else if (time.minutes == 0 && time.seconds == 0)
+		else if (time.minutes === 0 && time.seconds === 0)
 			setTime({
 				hours: time.hours - 1,
 				minutes: 59,
 				seconds: 59
 			});
-		else if (time.seconds == 0)
+		else if (time.seconds === 0)
 			setTime({
 				hours: time.hours,
 				minutes: time.minutes - 1,
@@ -35,9 +40,9 @@ const CountDown = ({ hours = 0, minutes = 0, seconds = 0 }) => {
 
 	const reset = () => {
 		setTime({
-			hours: parseInt(hours),
-			minutes: parseInt(minutes),
-			seconds: parseInt(seconds)
+			hours: parseInt(hours, 10),
+			minutes: parseInt(minutes, 10),
+			seconds: parseInt(seconds, 10)
 		});
 		setPaused(false);
 		setOver(false);
