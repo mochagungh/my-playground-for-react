@@ -10,7 +10,7 @@ function Star({ marked, starId }) {
 
 function StarRating(props) {
   const [rating, setRating] = useState(
-    typeof props.rating == "number" ? props.rating : 0
+    typeof props.rating === "number" ? props.rating : 0
   );
   const [selection, setSelection] = useState(0);
   const hoverOver = event => {
@@ -22,7 +22,7 @@ function StarRating(props) {
   return (
     <div
       onMouseOut={() => hoverOver(null)}
-      onClick={() =>
+      onClick={(event) =>
         setRating(event.target.getAttribute("star-id") || this.state.rating)
       }
       onMouseOver={hoverOver}
